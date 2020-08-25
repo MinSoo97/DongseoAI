@@ -1,1 +1,1 @@
-# Ai-hackathon-DSU-2020-
+# Ai-hackathon-DSU-2020
