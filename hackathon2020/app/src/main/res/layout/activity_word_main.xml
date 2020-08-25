@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFF1F3"
-    tools:context=".MainActivity">
+    tools:context=".wordMain">
 
     <ListView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:paddingLeft="10dp"
         android:divider="#EFF1F3"
         android:dividerHeight="12dp"
-        android:id="@+id/title_list"
+        android:id="@+id/word_list"
         android:scrollbars="none"
         />
 
@@ -54,41 +54,63 @@
         >
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_add_list"
+            android:id="@+id/fab_add_word_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_playlist_add_black_24dp"
             app:fab_colorNormal="#ffffff"
             app:fab_colorPressed="#99d4d4d4"
             app:fab_colorRipple="#66efecec"
-            app:fab_label="단어장 생성"
+            app:fab_label="단어 추가"
             app:fab_size="mini"/>
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_desc"
+            android:id="@+id/fab_serch_word"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_expand_less_black_24dp"
+            android:src="@drawable/ic_search_black_24dp"
             app:fab_colorNormal="#ffffff"
             app:fab_colorPressed="#99d4d4d4"
             app:fab_colorRipple="#66efecec"
-            app:fab_label="최신순"
+            app:fab_label="단어 찾기"
             app:fab_size="mini"/>
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_asc"
+            android:id="@+id/fab_solve_problems"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:src="@drawable/ic_create_black_24dp"
             app:fab_colorNormal="#ffffff"
             app:fab_colorPressed="#99d4d4d4"
             app:fab_colorRipple="#66efecec"
-            app:fab_label="추가순"
-            app:fab_size="mini"/>
+            app:fab_label="문제풀기"
+            app:fab_size="mini"
+            />
 
 
 
     </com.github.clans.fab.FloatingActionMenu>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textSize="16sp"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:id="@+id/seek_bar_speed"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
