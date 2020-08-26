@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fab_add_list, fab_list_desc, fab_list_asc;
 
     private ListAdapter mAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

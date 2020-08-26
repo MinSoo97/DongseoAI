@@ -22,29 +22,6 @@ public class DBHelper extends SQLiteOpenHelper {
             DbContract.DbEntry2.WORD_MEAN5, DbContract.DbEntry2.WORDBOOK_ID, DbContract.DbEntry2.DATE, DbContract.DbEntry2.CORRECT_ANSWER);
     private static final String SQL_DELETE_ENTRIES2 = "DROP TABLE IF EXISTS " + DbContract.DbEntry2.TABLE_NAME;
 
+    
 
-    public static DBHelper getInstance(Context context){
-        if(sInstance == null){
-            sInstance = new DBHelper(context);
-        }
-        return sInstance;
-    }
-
-    public DBHelper(Context context) {
-        super(context, DB_NAME, null, DB_VERSION);
-    }
-
-
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(SQL_CREATE_ENTRIES);
-        db.execSQL(SQL_CREATE_ENTRIES2);
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(SQL_DELETE_ENTRIES);
-        db.execSQL(SQL_DELETE_ENTRIES2);
-        onCreate(db);
-    }
 }

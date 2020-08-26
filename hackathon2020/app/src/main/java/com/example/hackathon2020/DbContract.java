@@ -3,10 +3,12 @@ package com.example.hackathon2020;
 
 
 public final class DbContract {
+
     private DbContract(){
 
     }
 
+    // 단어장 테이블 구성
     public static class DbEntry{
         public static final String _ID = "_id";
         public static final String _COUNT = "_count";
@@ -16,6 +18,7 @@ public final class DbContract {
         public static final String PROBLEM_COUNT = "problem_count";
     }
 
+    // 단어 테이블 구성
     public static class DbEntry2{
         public static final String _ID = "_id";
         public static final String TABLE_NAME = "word";
@@ -29,6 +32,5 @@ public final class DbContract {
         public static final String DATE = "date";
         public static final String CORRECT_ANSWER = "correct_answer";
     }
-
 
 }
