@@ -1,4 +1,4 @@
-package com.example.prototype;
+package com.example.hackathon2020;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

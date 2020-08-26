@@ -1,4 +1,4 @@
-package com.example.prototype;
+package com.example.hackathon2020;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
